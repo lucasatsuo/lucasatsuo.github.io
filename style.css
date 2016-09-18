@@ -1,21 +1,70 @@
 /* Ordem top, right, bottom, left */
-h1 { 
-	color: #fff; 
-	margin: 0;
-	padding: 0;
+
+
+/* Nao e meu */
+* {
+	box-sizing: border-box; 
 }
-body{
+
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+	border: 1px solid red;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/* Fim nao e meu */
+/* E meu */
+h1, h2 { 
+	color: #777; 
 	margin: 0;
 	padding: 0;
 }
 
-.dinamic {
-	margin: 0 15%;
-	padding: 0 20%;
-	background-color: lightgray;
+h2{
+	background-color: lightgreen;
 }
 
-.segundo {
-	margin: 0 15%;
-	background-color: #cc0;
+body {
+	margin: 0;
+	padding: 0;
 }
+
+
+
+.content {
+	width: 993px;
+	margin: 0 auto;
+}
+
+
+
+
+div {
+	background-color: #eee;
+}
+
+/* Fim e meu */
