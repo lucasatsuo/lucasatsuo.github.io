@@ -1,3 +1,7 @@
+body{
+	font-size: 20px;
+}
+
 img{
 	object-fit: cover;
 	border-radius: 20%;	
@@ -5,3 +9,10 @@ img{
 	height: 200px;
 }
 
+/*div{
+	border-style: dotted;
+}*/
+
+.container{
+	border-color: red;
+}
