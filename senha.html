@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Insira sua senha</title>
+    <style>
+        body { padding-left: 200px}
+        form { margin-top: 80px}
+    </style>
+</head>
+
+<body>
+    <h1>Sistema de senha mais seguro do mundo</h1>
+    <p>Você vai ter que me hackear para descobrir hua hua hua</p>
+    <p>se for capaz .... >:D</p>
+    <!-- Executar uma função Javascript enviando um formulário
+    https://stackoverflow.com/questions/683498/calling-javascript-from-a-html-form -->
+    <form action="javascript:verifica()">
+        <input type="text" id="senha">
+        <button type="submit">Enviar</button>
+    </form>
+
+
+    <!-- Iniciando o script Javascript, eu lembro que era bom deixar no final da página -->
+    <script type="text/javascript">
+        // Aqui dentro da tag <script> não usamos mais HTML, agora a linguagem é Javascript
+        // Criando uma função em Javascript, ela vai ser chamada quando preenchermos o formulário
+        // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Functions
+            // OBS: nesse a caso a função não tem um   return  , já que ela não precisa retornar nenhum valor
+        function verifica() {
+            var entrada = document.getElementById("senha")
+            senha_usuario = entrada.value // pega o valor que o usuário escrever
+            if (senha_usuario == "brasilodon") {
+                alert("Senha correta \nBem-Vindo !!!")
+            } else {
+                alert("Senha errada \nAcesso NEGADO !!  >:(")
+            }
+        }
+    </script>
+</body>
+
+</html>
